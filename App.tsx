@@ -6,9 +6,8 @@ import Layout from './components/layout/Layout';
 // Lazy-load pages for better performance
 const HomePage = lazy(() => import('./pages/home'));
 const ServicesPage = lazy(() => import('./pages/services/index'));
-const ServiceDetailPage = lazy(() => import('./pages/services/ServiceDetailPage'));
-const AiMlPage = lazy(() => import('./pages/services/details/AiMlPage'));
 const AboutPage = lazy(() => import('./pages/about/index'));
+const HowWeWorkPage = lazy(() => import('./pages/how-we-work/index'));
 const CaseStudiesPage = lazy(() => import('./pages/case-studies/index'));
 const CaseStudyDetailPage = lazy(() => import('./pages/case-studies/[id]'));
 const ContactPage = lazy(() => import('./pages/contact'));
@@ -42,8 +41,7 @@ const App = () => {
     <Routes location={location}>
       <Route path="/" element={<HomePage />} />
       <Route path="/services" element={<ServicesPage />} />
-      <Route path="/services/:id" element={<ServiceDetailPage />} />
-      <Route path="/services/ai-ml" element={<AiMlPage />} />
+      <Route path="/how-we-work" element={<HowWeWorkPage />} />
       <Route path="/work" element={<CaseStudiesPage />} />
       <Route path="/work/:id" element={<CaseStudyDetailPage />} />
       <Route path="/about" element={<AboutPage />} />
