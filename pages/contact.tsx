@@ -9,11 +9,7 @@ import Seo from '../components/Seo';
 type FormValues = {
   name: string;
   email: string;
-  phone?: string;
-  company?: string;
-  projectType: string;
   budget: string;
-  timeline: string;
   projectDescription: string;
 };
 
@@ -63,33 +59,11 @@ const ContactPage = () => {
     }
   ];
 
-  const projectTypes = [
-    "Custom Software Development",
-    "AI & Machine Learning Solutions",
-    "Web & Mobile Applications",
-    "SaaS Platform Development",
-    "Marketplace Development",
-    "E-commerce Solutions",
-    "Cloud & DevOps Services",
-    "Other"
-  ];
-
   const budgetOptions = [
-    "Not sure yet",
-    "Under £10K",
-    "£10K - £25K",
-    "£25K - £50K",
-    "£50K - £100K",
-    "Over £100K"
-  ];
-
-  const timelineOptions = [
-    "ASAP",
-    "1-3 months",
-    "3-6 months",
-    "6-12 months",
-    "12+ months",
-    "Just exploring"
+    "Under £10k",
+    "£10k-£25k",
+    "£25k-£50k",
+    "£50k+"
   ];
 
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
@@ -100,13 +74,9 @@ const ContactPage = () => {
       const subject = encodeURIComponent(`New Project Inquiry from ${data.name}`);
       const body = encodeURIComponent(`Name: ${data.name}
 Email: ${data.email}
-Phone: ${data.phone || 'N/A'}
-Company: ${data.company || 'N/A'}
 
 Project Details:
-Type: ${data.projectType || 'N/A'}
 Budget: ${data.budget || 'N/A'}
-Timeline: ${data.timeline || 'N/A'}
 
 Description:
 ${data.projectDescription}
@@ -257,56 +227,11 @@ ${data.projectDescription}
                           {errors.email && <p className="text-red-400 mt-1 text-sm" role="alert">{errors.email.message}</p>}
                         </motion.div>
                     </div>
-                    <div className="grid sm:grid-cols-2 gap-6">
-                        <motion.div
-                          whileHover={{ scale: 1.02 }}
-                          onHoverStart={() => setHoveredField('phone')}
-                          onHoverEnd={() => setHoveredField(null)}
-                        >
-                          <label htmlFor="phone" className="block text-sm font-medium text-text-secondary mb-2">Phone (Optional)</label>
-                          <input 
-                            id="phone" 
-                            type="tel" 
-                            {...register('phone')} 
-                            className={`${inputStyles} ${hoveredField === 'phone' ? 'ring-2 ring-primary/50' : ''} transition-all duration-300`}
-                          />
-                        </motion.div>
-                        <motion.div
-                          whileHover={{ scale: 1.02 }}
-                          onHoverStart={() => setHoveredField('company')}
-                          onHoverEnd={() => setHoveredField(null)}
-                        >
-                          <label htmlFor="company" className="block text-sm font-medium text-text-secondary mb-2">Company (Optional)</label>
-                          <input 
-                            id="company" 
-                            type="text" 
-                            {...register('company')} 
-                            className={`${inputStyles} ${hoveredField === 'company' ? 'ring-2 ring-primary/50' : ''} transition-all duration-300`}
-                          />
-                        </motion.div>
-                    </div>
+
                     
                     {/* Project Details Section */}
                     <div className="border-t border-border/30 pt-6">
-                      <h3 className="text-lg font-semibold text-text-primary mb-4">Project Details</h3>
-                      <div className="grid sm:grid-cols-2 gap-6">
-                        <motion.div
-                          whileHover={{ scale: 1.02 }}
-                          onHoverStart={() => setHoveredField('projectType')}
-                          onHoverEnd={() => setHoveredField(null)}
-                        >
-                          <label htmlFor="projectType" className="block text-sm font-medium text-text-secondary mb-2">Project Type</label>
-                          <select 
-                            id="projectType" 
-                            {...register('projectType')} 
-                            className={`${inputStyles} ${hoveredField === 'projectType' ? 'ring-2 ring-primary/50' : ''} transition-all duration-300`}
-                          >
-                            <option value="">Select a project type</option>
-                            {projectTypes.map((type, index) => (
-                              <option key={index} value={type}>{type}</option>
-                            ))}
-                          </select>
-                        </motion.div>
+                      <div className="grid sm:grid-cols-1 gap-6">
                         <motion.div
                           whileHover={{ scale: 1.02 }}
                           onHoverStart={() => setHoveredField('budget')}
@@ -321,23 +246,6 @@ ${data.projectDescription}
                             <option value="">Select a budget range</option>
                             {budgetOptions.map((budget, index) => (
                               <option key={index} value={budget}>{budget}</option>
-                            ))}
-                          </select>
-                        </motion.div>
-                        <motion.div
-                          whileHover={{ scale: 1.02 }}
-                          onHoverStart={() => setHoveredField('timeline')}
-                          onHoverEnd={() => setHoveredField(null)}
-                        >
-                          <label htmlFor="timeline" className="block text-sm font-medium text-text-secondary mb-2">Timeline</label>
-                          <select 
-                            id="timeline" 
-                            {...register('timeline')} 
-                            className={`${inputStyles} ${hoveredField === 'timeline' ? 'ring-2 ring-primary/50' : ''} transition-all duration-300`}
-                          >
-                            <option value="">Select a timeline</option>
-                            {timelineOptions.map((timeline, index) => (
-                              <option key={index} value={timeline}>{timeline}</option>
                             ))}
                           </select>
                         </motion.div>

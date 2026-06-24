@@ -1,213 +1,118 @@
-import { motion } from 'framer-motion';
-import { Users, Award, CheckCircle, Clock, Shield, Star, Zap, Rocket, Target } from 'lucide-react';
-import Hero from '../../components/sections/Hero';
-import CaseStudies from '../../components/sections/CaseStudies';
-import ContactCTA from '../../components/sections/ContactCTA';
+import { Link } from 'react-router-dom';
 import SEO from '../../components/seo/SEO';
 import Section from '../../components/ui/Section';
 import Card from '../../components/ui/Card';
 import Button from '../../components/ui/Button';
-import { Link } from 'react-router-dom';
+import { ArrowRight, CheckCircle } from 'lucide-react';
 
-// FIX: Casting motion component to 'any' to bypass type checking issues
-const MotionDiv: any = motion.div;
-
-const itemVariants = {
-  hidden: { y: 30, opacity: 0 },
-  visible: { 
-    y: 0, 
-    opacity: 1, 
-    transition: { 
-      duration: 0.8, 
-      ease: [0.25, 0.1, 0.25, 1]
-    } 
-  },
-};
-
-// FIX: Removed React.FC for better type compatibility.
 const HomePage = () => {
   return (
     <>
       <SEO 
-        title="Custom Software Development & AI Solutions | The Digital Dude" 
-        description="Transform your business with custom software, AI solutions & SaaS platforms. Expert developers delivering measurable ROI & scalable digital products."
+        title="Custom Software Development | The Digital Dude" 
+        description="We build CRMs, SaaS platforms, and on-demand marketplaces for businesses in Australia, the UK, and Bangladesh. 7 products shipped. Real systems, running live."
         structuredData={{
           "@context": "https://schema.org",
-          "@type": "WebSite",
+          "@type": "Organization",
           "name": "The Digital Dude",
           "url": "https://www.digitaldude.online",
-          "description": "Transform your business with custom software, AI solutions & SaaS platforms. Expert developers delivering measurable ROI & scalable digital products.",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://www.digitaldude.online/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "The Digital Dude",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://www.digitaldude.online/logo.svg",
-              "width": 600,
-              "height": 60
-            }
+          "logo": "https://www.digitaldude.online/logo.svg",
+          "foundingDate": "2020",
+          "description": "Custom CRM, SaaS, and marketplace development agency. UK registered, serving Australia, the UK, and Bangladesh.",
+          "areaServed": ["AU", "GB", "BD"],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "info@digitaldude.co.uk",
+            "contactType": "sales"
           }
         }}
       />
-      <Hero />
-      
-      {/* Enhanced Trust Indicators with Value Propositions */}
-      <Section title="" subtitle="" className="py-8 sm:py-12">
-        {/* Trust Indicators with enhanced animation - perfectly aligned and consistent */}
-        <MotionDiv 
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-16 max-w-7xl mx-auto px-4"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={{
-            visible: {
-              opacity: 1,
-              transition: { staggerChildren: 0.1 }
-            },
-            hidden: { opacity: 0 }
-          }}
-        >
-          <MotionDiv 
-            className="flex flex-col items-center justify-center bg-surface/20 backdrop-blur-sm p-4 rounded-2xl border border-border/30 h-24 w-full hover:bg-surface/30 transition-all duration-300 hover-glow-rgb card-gradient-hover"
-            variants={itemVariants}
-            whileHover={{ scale: 1.02, y: -4 }}
-            transition={{ type: "spring", stiffness: 400, damping: 25 }}
-          >
-            <Users className="w-6 h-6 text-primary flex-shrink-0 mb-2" />
-            <span className="font-bold text-lg text-text-primary mb-1">7</span>
-            <span className="font-medium text-xs text-text-secondary text-center leading-tight">Live Products Shipped</span>
-          </MotionDiv>
-          <MotionDiv 
-            className="flex flex-col items-center justify-center bg-surface/20 backdrop-blur-sm p-4 rounded-2xl border border-border/30 h-24 w-full hover:bg-surface/30 transition-all duration-300 hover-glow-rgb card-gradient-hover"
-            variants={itemVariants}
-            whileHover={{ scale: 1.02, y: -4 }}
-            transition={{ type: "spring", stiffness: 400, damping: 25 }}
-          >
-            <Award className="w-6 h-6 text-accent flex-shrink-0 mb-2" />
-            <span className="font-bold text-lg text-text-primary mb-1">5</span>
-            <span className="font-medium text-xs text-text-secondary text-center leading-tight">Industries Served</span>
-          </MotionDiv>
-          <MotionDiv 
-            className="flex flex-col items-center justify-center bg-surface/20 backdrop-blur-sm p-4 rounded-2xl border border-border/30 h-24 w-full hover:bg-surface/30 transition-all duration-300 hover-glow-rgb card-gradient-hover"
-            variants={itemVariants}
-            whileHover={{ scale: 1.02, y: -4 }}
-            transition={{ type: "spring", stiffness: 400, damping: 25 }}
-          >
-            <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mb-2" />
-            <span className="font-bold text-lg text-text-primary mb-1">4,000+</span>
-            <span className="font-medium text-xs text-text-secondary text-center leading-tight">Rentals Managed</span>
-          </MotionDiv>
-          <MotionDiv 
-            className="flex flex-col items-center justify-center bg-surface/20 backdrop-blur-sm p-4 rounded-2xl border border-border/30 h-24 w-full hover:bg-surface/30 transition-all duration-300 hover-glow-rgb card-gradient-hover"
-            variants={itemVariants}
-            whileHover={{ scale: 1.02, y: -4 }}
-            transition={{ type: "spring", stiffness: 400, damping: 25 }}
-          >
-            <Clock className="w-6 h-6 text-accent flex-shrink-0 mb-2" />
-            <span className="font-bold text-lg text-text-primary mb-1">30+</span>
-            <span className="font-medium text-xs text-text-secondary text-center leading-tight">Agencies on our CRM</span>
-          </MotionDiv>
-          <MotionDiv 
-            className="flex flex-col items-center justify-center bg-surface/20 backdrop-blur-sm p-4 rounded-2xl border border-border/30 h-24 w-full hover:bg-surface/30 transition-all duration-300 hover-glow-rgb card-gradient-hover"
-            variants={itemVariants}
-            whileHover={{ scale: 1.02, y: -4 }}
-            transition={{ type: "spring", stiffness: 400, damping: 25 }}
-          >
-            <Shield className="w-6 h-6 text-primary flex-shrink-0 mb-2" />
-            <span className="font-bold text-lg text-text-primary mb-1">2020</span>
-            <span className="font-medium text-xs text-text-secondary text-center leading-tight">Founded</span>
-          </MotionDiv>
-          <MotionDiv 
-            className="flex flex-col items-center justify-center bg-surface/20 backdrop-blur-sm p-4 rounded-2xl border border-border/30 h-24 w-full hover:bg-surface/30 transition-all duration-300 hover-glow-rgb card-gradient-hover"
-            variants={itemVariants}
-            whileHover={{ scale: 1.02, y: -4 }}
-            transition={{ type: "spring", stiffness: 400, damping: 25 }}
-          >
-            <Star className="w-6 h-6 text-accent flex-shrink-0 mb-2" />
-            <span className="font-bold text-lg text-text-primary mb-1">UK</span>
-            <span className="font-medium text-xs text-text-secondary text-center leading-tight">Registered</span>
-          </MotionDiv>
-        </MotionDiv>
-        
-        {/* Enhanced Value Proposition Section */}
-        <MotionDiv
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="max-w-5xl mx-auto mb-20"
-        >
-          <Card className="p-8 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 border-primary/20 hover-glow-rgb card-gradient-hover">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center md:text-left">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/20 rounded-full mb-4">
-                  <Target className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold text-text-primary mb-2">We scope before we build</h3>
-                <p className="text-text-secondary">
-                  Every project starts with a one-page brief. No code until scope is agreed.
-                </p>
-              </div>
-              <div className="text-center md:text-left">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-accent/20 rounded-full mb-4">
-                  <Zap className="w-6 h-6 text-accent" />
-                </div>
-                <h3 className="text-xl font-bold text-text-primary mb-2">50% upfront, milestones after</h3>
-                <p className="text-text-secondary">
-                  Clear payment terms, no surprises.
-                </p>
-              </div>
-              <div className="text-center md:text-left">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/20 rounded-full mb-4">
-                  <Rocket className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold text-text-primary mb-2">You own everything</h3>
-                <p className="text-text-secondary">
-                  Source code, hosting accounts, domain. Always.
-                </p>
-              </div>
-            </div>
-            
-            <div className="mt-8 pt-6 border-t border-border/30 flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link to="/services">
-                <Button size="lg">
-                  Explore Our Services
-                </Button>
-              </Link>
-              <Link to="/work">
-                <Button variant="outline" size="lg">
-                  See Success Stories
-                </Button>
-              </Link>
-            </div>
+
+      {/* 1. Hero */}
+      <section className="pt-40 pb-24 px-6 max-w-5xl mx-auto text-center">
+        <h1 className="text-4xl md:text-6xl font-bold text-text-primary mb-6 leading-tight">
+          We build CRMs, SaaS platforms, and on-demand marketplaces.
+        </h1>
+        <p className="text-xl md:text-2xl text-text-secondary mb-12 max-w-3xl mx-auto leading-relaxed">
+          7 products shipped. 5 industries served. 4,000+ rentals managed. UK registered.
+        </p>
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <Link to="/work"><Button size="lg">See Our Work</Button></Link>
+          <Link to="/contact"><Button variant="outline" size="lg">Start a Project</Button></Link>
+        </div>
+      </section>
+
+      {/* 2. Work preview */}
+      <Section title="Our Work" subtitle="Real systems, running live.">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+          <Card className="p-8 border-border/30 bg-surface/20">
+            <h3 className="text-xl font-bold text-text-primary mb-3">Property Compliance CRM</h3>
+            <p className="text-text-secondary mb-6 flex-grow">Multi-portal CRM for 30+ agencies and 4,000+ rentals.</p>
           </Card>
-        </MotionDiv>
-      </Section>
-      
-      <CaseStudies />
-      
-      <Section title="" subtitle="" className="py-20 bg-surface/20">
-        <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-text-primary">Ready to build something real?</h2>
-          <p className="text-lg text-text-secondary mb-8">
-            See our transparent, 5-step process for delivering custom software on time and on budget.
-          </p>
-          <Link to="/how-we-work">
-            <Button size="lg" className="group">
-              <span className="flex items-center gap-2">
-                See How We Work
-              </span>
-            </Button>
+          <Card className="p-8 border-border/30 bg-surface/20">
+            <h3 className="text-xl font-bold text-text-primary mb-3">Airline Ticketing CRM</h3>
+            <p className="text-text-secondary mb-6 flex-grow">Internal CRM replacing scattered WhatsApp chats.</p>
+          </Card>
+          <Card className="p-8 border-border/30 bg-surface/20">
+            <h3 className="text-xl font-bold text-text-primary mb-3">Logistics Coordination</h3>
+            <p className="text-text-secondary mb-6 flex-grow">Mobile-first breakdown management platform.</p>
+          </Card>
+        </div>
+        <div className="text-center">
+          <Link to="/work" className="text-primary hover:text-primary/80 font-bold inline-flex items-center gap-2 text-lg">
+            See all work <ArrowRight size={20} />
           </Link>
         </div>
       </Section>
-      
-      <ContactCTA />
+
+      {/* 3. Services */}
+      <Section title="Services" subtitle="What we build" className="bg-surface/10 py-24">
+        <div className="max-w-3xl mx-auto">
+          <ul className="space-y-6 mb-10 text-xl text-text-secondary">
+            <li className="flex items-center gap-4"><CheckCircle className="text-accent w-8 h-8 shrink-0"/> Custom CRM Systems</li>
+            <li className="flex items-center gap-4"><CheckCircle className="text-accent w-8 h-8 shrink-0"/> SaaS Platform Development</li>
+            <li className="flex items-center gap-4"><CheckCircle className="text-accent w-8 h-8 shrink-0"/> On-Demand Marketplaces</li>
+            <li className="flex items-center gap-4"><CheckCircle className="text-accent w-8 h-8 shrink-0"/> ERP & HRM Systems</li>
+          </ul>
+          <Link to="/services" className="text-primary hover:text-primary/80 font-bold inline-flex items-center gap-2 text-lg">
+            Full services <ArrowRight size={20} />
+          </Link>
+        </div>
+      </Section>
+
+      {/* 4. Process */}
+      <Section title="How We Work" subtitle="A transparent, 4-step process">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <div className="border border-border/30 p-6 rounded-xl bg-surface/10">
+            <div className="text-4xl font-black text-primary/20 mb-4">01</div>
+            <h3 className="font-bold text-lg text-text-primary mb-3">The One-Page Brief</h3>
+            <p className="text-text-secondary">No 50-page specs. Scope agreed on one page.</p>
+          </div>
+          <div className="border border-border/30 p-6 rounded-xl bg-surface/10">
+            <div className="text-4xl font-black text-primary/20 mb-4">02</div>
+            <h3 className="font-bold text-lg text-text-primary mb-3">Weekly Sprints & Demos</h3>
+            <p className="text-text-secondary">You see working software every Friday.</p>
+          </div>
+          <div className="border border-border/30 p-6 rounded-xl bg-surface/10">
+            <div className="text-4xl font-black text-primary/20 mb-4">03</div>
+            <h3 className="font-bold text-lg text-text-primary mb-3">Handover & Training</h3>
+            <p className="text-text-secondary">We train your team and hand over the keys.</p>
+          </div>
+          <div className="border border-border/30 p-6 rounded-xl bg-surface/10">
+            <div className="text-4xl font-black text-primary/20 mb-4">04</div>
+            <h3 className="font-bold text-lg text-text-primary mb-3">Ongoing Support</h3>
+            <p className="text-text-secondary">Optional retainer for updates and scaling.</p>
+          </div>
+        </div>
+      </Section>
+
+      {/* 5. CTA block */}
+      <section className="py-24 text-center bg-primary/10 mt-12 border-t border-primary/20">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-8">Got a project in mind? Let's scope it.</h2>
+          <Link to="/contact"><Button size="lg" className="px-10 py-4 text-lg">Start a project</Button></Link>
+        </div>
+      </section>
     </>
   );
 };

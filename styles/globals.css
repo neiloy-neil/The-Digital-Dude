@@ -80,69 +80,6 @@ html {
   animation: gradient-flow 4s ease-in-out infinite;
 }
 
-/* RGB gradient for backgrounds and borders - subtle */
-.bg-gradient-rgb {
-  background: linear-gradient(135deg, 
-    #7c3aed 0%,   /* violet-600 */
-    #22c55e 15%,  /* green-500 */
-    #10b981 30%,  /* emerald-500 */
-    #06b6d4 45%,  /* cyan-500 */
-    #0ea5e9 60%,  /* sky-500 */
-    #3b82f6 75%,  /* blue-500 */
-    #a855f7 90%,  /* purple-500 */
-    #7c3aed 100%); /* back to violet-600 */
-  background-size: 200% 200%;
-  animation: gradient-flow-rgb 8s ease-in-out infinite;
-}
-
-/* Gradient text with purple brand colors */
-.gradient-rgb {
-  background: linear-gradient(135deg, 
-    #7c3aed 0%,   /* violet-600 */
-    #22c55e 15%,  /* green-500 */
-    #10b981 30%,  /* emerald-500 */
-    #06b6d4 45%,  /* cyan-500 */
-    #0ea5e9 60%,  /* sky-500 */
-    #3b82f6 75%,  /* blue-500 */
-    #a855f7 90%,  /* purple-500 */
-    #7c3aed 100%); /* back to violet-600 */
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: gradient-flow-rgb 8s ease-in-out infinite;
-  /* Add fixed height to prevent layout shifts */
-  line-height: 1.2;
-  display: inline-block;
-  vertical-align: top;
-}
-
-/* Fixed height container for typewriter effect */
-.typewriter-container {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 1.5em;
-  line-height: 1.2;
-}
-
-@keyframes gradient-flow {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
-@keyframes gradient-flow-rgb {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-}
 
 /* Gradient text hover effect for service titles - readable and smooth */
 .gradient-text-hover {
@@ -210,15 +147,6 @@ html {
   transform: translateY(-2px);
 }
 
-/* RGB gradient hover glow for key components - subtle green/blue */
-.hover-glow-rgb {
-  transition: all 0.3s ease;
-}
-
-.hover-glow-rgb:hover {
-  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.15), 0 5px 15px rgba(59, 130, 246, 0.15), 0 0 0 1px rgba(6, 182, 212, 0.2);
-  transform: translateY(-2px);
-}
 
 /* Enhanced gradient hover effects for general elements */
 .gradient-hover {
@@ -241,33 +169,6 @@ html {
   opacity: 1;
 }
 
-/* Card gradient background effects */
-.card-gradient-hover {
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.card-gradient-hover::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, 
-    rgba(124, 58, 237, 0.05) 0%,   /* violet-600 */
-    rgba(34, 197, 94, 0.05) 20%,   /* green-500 */
-    rgba(59, 130, 246, 0.05) 50%,  /* blue-500 */
-    rgba(168, 85, 247, 0.05) 80%,  /* purple-500 */
-    rgba(124, 58, 237, 0.05) 100%); /* back to violet-600 */
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
-  background-size: 200% 200%;
-  animation: gradient-flow 8s ease-in-out infinite;
-}
-
-.card-gradient-hover:hover::after {
-  opacity: 1;
-}
 
 /* Text gradient effects for headings */
 .heading-gradient {
