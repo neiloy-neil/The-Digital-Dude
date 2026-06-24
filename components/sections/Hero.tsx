@@ -29,14 +29,12 @@ const Hero = () => {
   // Typewriter effect for services
   const typewriterText = useTypewriter({
     words: [
-      'Custom Software Development',
-      'AI & Machine Learning Solutions',
-      'Web & Mobile Applications',
-      'E-commerce Platforms',
-      'Cloud Infrastructure',
-      'Business Automation',
-      'Data Analytics Solutions',
-      'API Development & Integration'
+      'Custom CRM Systems',
+      'SaaS Platform Development',
+      'On-Demand Marketplaces',
+      'ERP & HRM Systems',
+      'AI-Integrated Web Platforms',
+      'Recruitment & HR Systems'
     ],
     typeSpeed: 100,
     deleteSpeed: 50,
@@ -191,9 +189,7 @@ const Hero = () => {
               className="text-base md:text-lg lg:text-xl text-text-secondary max-w-3xl mx-auto mb-12 leading-relaxed"
               variants={itemVariants}
             >
-              We design, build, and deploy intelligent software ecosystems that streamline operations, 
-              <br className="hidden md:block" />
-              <span className="text-primary font-semibold gradient-rgb">boost efficiency by 40-60%</span>, and unlock new revenue streams for ambitious businesses.
+              We build CRMs, SaaS platforms, and on-demand marketplaces for businesses in Australia, the UK, and Bangladesh. 7 products shipped. Real systems, running live.
             </motion.p>
 
             {/* Enhanced Value Propositions */}

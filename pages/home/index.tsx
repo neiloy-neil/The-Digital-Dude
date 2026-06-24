@@ -84,8 +84,8 @@ const HomePage = () => {
             transition={{ type: "spring", stiffness: 400, damping: 25 }}
           >
             <Users className="w-6 h-6 text-primary flex-shrink-0 mb-2" />
-            <span className="font-bold text-lg text-text-primary mb-1">50+</span>
-            <span className="font-medium text-xs text-text-secondary text-center leading-tight">Happy Clients</span>
+            <span className="font-bold text-lg text-text-primary mb-1">7</span>
+            <span className="font-medium text-xs text-text-secondary text-center leading-tight">Live Products Shipped</span>
           </MotionDiv>
           <MotionDiv 
             className="flex flex-col items-center justify-center bg-surface/20 backdrop-blur-sm p-4 rounded-2xl border border-border/30 h-24 w-full hover:bg-surface/30 transition-all duration-300 hover-glow-rgb card-gradient-hover"
@@ -94,8 +94,8 @@ const HomePage = () => {
             transition={{ type: "spring", stiffness: 400, damping: 25 }}
           >
             <Award className="w-6 h-6 text-accent flex-shrink-0 mb-2" />
-            <span className="font-bold text-lg text-text-primary mb-1">5+</span>
-            <span className="font-medium text-xs text-text-secondary text-center leading-tight">Years Experience</span>
+            <span className="font-bold text-lg text-text-primary mb-1">5</span>
+            <span className="font-medium text-xs text-text-secondary text-center leading-tight">Industries Served</span>
           </MotionDiv>
           <MotionDiv 
             className="flex flex-col items-center justify-center bg-surface/20 backdrop-blur-sm p-4 rounded-2xl border border-border/30 h-24 w-full hover:bg-surface/30 transition-all duration-300 hover-glow-rgb card-gradient-hover"
@@ -104,8 +104,8 @@ const HomePage = () => {
             transition={{ type: "spring", stiffness: 400, damping: 25 }}
           >
             <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mb-2" />
-            <span className="font-bold text-lg text-text-primary mb-1">100%</span>
-            <span className="font-medium text-xs text-text-secondary text-center leading-tight">Project Success Rate</span>
+            <span className="font-bold text-lg text-text-primary mb-1">4,000+</span>
+            <span className="font-medium text-xs text-text-secondary text-center leading-tight">Rentals Managed</span>
           </MotionDiv>
           <MotionDiv 
             className="flex flex-col items-center justify-center bg-surface/20 backdrop-blur-sm p-4 rounded-2xl border border-border/30 h-24 w-full hover:bg-surface/30 transition-all duration-300 hover-glow-rgb card-gradient-hover"
@@ -114,8 +114,8 @@ const HomePage = () => {
             transition={{ type: "spring", stiffness: 400, damping: 25 }}
           >
             <Clock className="w-6 h-6 text-accent flex-shrink-0 mb-2" />
-            <span className="font-bold text-lg text-text-primary mb-1">24/7</span>
-            <span className="font-medium text-xs text-text-secondary text-center leading-tight">Support Available</span>
+            <span className="font-bold text-lg text-text-primary mb-1">30+</span>
+            <span className="font-medium text-xs text-text-secondary text-center leading-tight">Agencies on our CRM</span>
           </MotionDiv>
           <MotionDiv 
             className="flex flex-col items-center justify-center bg-surface/20 backdrop-blur-sm p-4 rounded-2xl border border-border/30 h-24 w-full hover:bg-surface/30 transition-all duration-300 hover-glow-rgb card-gradient-hover"
@@ -124,8 +124,8 @@ const HomePage = () => {
             transition={{ type: "spring", stiffness: 400, damping: 25 }}
           >
             <Shield className="w-6 h-6 text-primary flex-shrink-0 mb-2" />
-            <span className="font-bold text-lg text-text-primary mb-1">Bank-Level</span>
-            <span className="font-medium text-xs text-text-secondary text-center leading-tight">Security</span>
+            <span className="font-bold text-lg text-text-primary mb-1">2020</span>
+            <span className="font-medium text-xs text-text-secondary text-center leading-tight">Founded</span>
           </MotionDiv>
           <MotionDiv 
             className="flex flex-col items-center justify-center bg-surface/20 backdrop-blur-sm p-4 rounded-2xl border border-border/30 h-24 w-full hover:bg-surface/30 transition-all duration-300 hover-glow-rgb card-gradient-hover"
@@ -134,8 +134,8 @@ const HomePage = () => {
             transition={{ type: "spring", stiffness: 400, damping: 25 }}
           >
             <Star className="w-6 h-6 text-accent flex-shrink-0 mb-2" />
-            <span className="font-bold text-lg text-text-primary mb-1">4.9/5</span>
-            <span className="font-medium text-xs text-text-secondary text-center leading-tight">Client Rating</span>
+            <span className="font-bold text-lg text-text-primary mb-1">UK</span>
+            <span className="font-medium text-xs text-text-secondary text-center leading-tight">Registered</span>
           </MotionDiv>
         </MotionDiv>
         
@@ -153,27 +153,27 @@ const HomePage = () => {
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/20 rounded-full mb-4">
                   <Target className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold text-text-primary mb-2">Targeted Results</h3>
+                <h3 className="text-xl font-bold text-text-primary mb-2">We scope before we build</h3>
                 <p className="text-text-secondary">
-                  We don't just build software - we deliver measurable business outcomes that align with your strategic goals.
+                  Every project starts with a one-page brief. No code until scope is agreed.
                 </p>
               </div>
               <div className="text-center md:text-left">
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-accent/20 rounded-full mb-4">
                   <Zap className="w-6 h-6 text-accent" />
                 </div>
-                <h3 className="text-xl font-bold text-text-primary mb-2">Rapid Delivery</h3>
+                <h3 className="text-xl font-bold text-text-primary mb-2">50% upfront, milestones after</h3>
                 <p className="text-text-secondary">
-                  Our agile approach means you'll see working software in weeks, not months, with continuous improvements.
+                  Clear payment terms, no surprises.
                 </p>
               </div>
               <div className="text-center md:text-left">
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/20 rounded-full mb-4">
                   <Rocket className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold text-text-primary mb-2">Future-Proof</h3>
+                <h3 className="text-xl font-bold text-text-primary mb-2">You own everything</h3>
                 <p className="text-text-secondary">
-                  Built with scalability in mind, our solutions grow with your business and adapt to changing needs.
+                  Source code, hosting accounts, domain. Always.
                 </p>
               </div>
             </div>
