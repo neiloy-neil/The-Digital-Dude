@@ -39,6 +39,9 @@ export interface CaseStudy {
   techStack: string[];
   metrics: Metric[];
   gallery: string[];
+  industry?: string;
+  country?: string;
+  status?: string;
 }
 
 export interface Project {
