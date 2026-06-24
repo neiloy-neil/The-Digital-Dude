@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Menu, X, Phone, Mail, ChevronDown } from 'lucide-react';
+import { Menu, X, Mail, ChevronDown } from 'lucide-react';
 import Button from '../ui/Button';
 import Logo from '../ui/Logo';
 
@@ -44,7 +44,7 @@ const Header = () => {
     }, 300);
   };
   
-  const navLinks = [
+  const navLinks: {label: string, path: string, dropdown?: {label: string, path: string}[]}[] = [
     { label: "Services", path: "/services" },
     { label: "Work", path: "/work" },
     { label: "How We Work", path: "/how-we-work" },

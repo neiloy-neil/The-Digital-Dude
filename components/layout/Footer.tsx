@@ -1,9 +1,8 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, Twitter, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
+import { Github, Linkedin, Twitter, Mail, MapPin, ArrowRight } from 'lucide-react';
 import Logo from '../ui/Logo';
 import Button from '../ui/Button';
-import { services } from '../../data/staticData';
 
 const MotionDiv: any = motion.div;
 

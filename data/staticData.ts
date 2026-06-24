@@ -1,4 +1,4 @@
-import { BlogPost, ProcessStep, Testimonial, Differentiator, TeamMember, Milestone } from '../types';
+import { BlogPost, ProcessStep, Differentiator, TeamMember, Milestone } from '../types';
 import { caseStudies as caseStudyList } from './caseStudiesData';
 
 // Export the imported data

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, CheckCircle, BarChart2, Zap, Quote, Star } from 'lucide-react';
+import { ArrowLeft, CheckCircle, BarChart2, Zap, Star } from 'lucide-react';
 import Button from '../../components/ui/Button';
 import Seo from '../../components/Seo';
 import { caseStudies } from '../../data/staticData';
