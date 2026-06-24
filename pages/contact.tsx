@@ -33,8 +33,8 @@ const ContactPage = () => {
       icon: Mail,
       title: 'Email Us',
       description: 'Send us a detailed message',
-      action: 'info@digitaldude.co.uk',
-      href: 'mailto:info@digitaldude.co.uk',
+      action: 'info@digitaldude.online',
+      href: 'mailto:info@digitaldude.online',
       color: 'text-primary'
     },
     {
@@ -96,15 +96,28 @@ const ContactPage = () => {
     setIsSuccess(false);
     setIsError(false);
     
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    try {
+      const subject = encodeURIComponent(`New Project Inquiry from ${data.name}`);
+      const body = encodeURIComponent(`Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone || 'N/A'}
+Company: ${data.company || 'N/A'}
 
-    // Simulate error for demo purposes
-    if (data.email.toLowerCase() === 'error@example.com') {
-      setIsError(true);
-    } else {
+Project Details:
+Type: ${data.projectType || 'N/A'}
+Budget: ${data.budget || 'N/A'}
+Timeline: ${data.timeline || 'N/A'}
+
+Description:
+${data.projectDescription}
+`);
+      
+      window.location.href = `mailto:info@digitaldude.online?subject=${subject}&body=${body}`;
+      
       setIsSuccess(true);
       reset();
+    } catch (error) {
+      setIsError(true);
     }
   };
   
@@ -126,7 +139,7 @@ const ContactPage = () => {
             "@type": "ContactPoint",
             "telephone": "+44-123-456-789",
             "contactType": "Sales",
-            "email": "info@digitaldude.co.uk",
+            "email": "info@digitaldude.online",
             "availableLanguage": "en"
           },
           "address": {

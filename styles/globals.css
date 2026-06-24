@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --font-sans: 'Poppins', sans-serif;
+  --font-sans: 'Inter', sans-serif;
 
   /* Enhanced Color Palette based on purple logo brand colors */
   --color-background-body: #0f172a; /* slate-900 */

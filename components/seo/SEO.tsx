@@ -21,7 +21,7 @@ const SEO = ({
   title = 'The Digital Dude - Custom Software Development & AI Solutions',
   description = 'Leading software development agency specializing in custom SaaS platforms, AI solutions, and digital transformation. Transform your business with cutting-edge technology.',
   keywords = 'software development, custom software, SaaS development, AI solutions, web development, mobile apps, digital transformation, React, Node.js, Python, machine learning',
-  image = 'https://images.unsplash.com/photo-1486312338219-ce68e2c6b33d?w=1200&h=630&fit=crop',
+  image = 'https://www.digitaldude.online/THE DIGITAL DUDE-04.png',
   url = 'https://www.digitaldude.online',
   type = 'website',
   structuredData,
