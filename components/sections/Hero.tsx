@@ -6,8 +6,7 @@ import Button from '../ui/Button';
 import Magnetic from '../ui/Magnetic';
 import { useTypewriter } from '../../hooks/useTypewriter';
 
-// Lazy load the AuroraBackground for better performance
-const AuroraBackground = lazy(() => import('../ui/AuroraBackground'));
+
 
 // Enhanced Hero with better animations and visual appeal
 const Hero = () => {
@@ -78,20 +77,8 @@ const Hero = () => {
     },
   };
 
-  // Loading fallback for AuroraBackground
-  const AuroraFallback = () => (
-    <div className="absolute inset-0 -z-10 overflow-hidden">
-      <div className="absolute inset-0 bg-background" />
-    </div>
-  );
-
   return (
-    <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden bg-gradient-to-br from-background via-background/95 to-surface/10">
-      {/* Aurora Background Effect */}
-      <Suspense fallback={<AuroraFallback />}>
-        <AuroraBackground />
-      </Suspense>
-      
+    <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden bg-background">
       {/* Enhanced Floating Elements - Reduced animation complexity on mobile */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Main floating orbs */}

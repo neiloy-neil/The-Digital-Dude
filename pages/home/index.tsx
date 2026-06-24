@@ -1,13 +1,8 @@
 import { motion } from 'framer-motion';
 import { Users, Award, CheckCircle, Clock, Shield, Star, Zap, Rocket, Target } from 'lucide-react';
 import Hero from '../../components/sections/Hero';
-import KeyDifferentiators from '../../components/sections/KeyDifferentiators';
-import Services from '../../components/sections/Services';
 import CaseStudies from '../../components/sections/CaseStudies';
-import Process from '../../components/sections/Process';
-
 import ContactCTA from '../../components/sections/ContactCTA';
-import CompaniesWorkedWith from '../../components/sections/CompaniesWorkedWith';
 import SEO from '../../components/seo/SEO';
 import Section from '../../components/ui/Section';
 import Card from '../../components/ui/Card';
@@ -194,19 +189,23 @@ const HomePage = () => {
         </MotionDiv>
       </Section>
       
-      <KeyDifferentiators />
-      
-      <div id="services">
-        <Services />
-      </div>
-      
       <CaseStudies />
       
-      <Process />
-      
-
-      
-      <CompaniesWorkedWith />
+      <Section className="py-20 bg-surface/20">
+        <div className="text-center max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6 text-text-primary">Ready to build something real?</h2>
+          <p className="text-lg text-text-secondary mb-8">
+            See our transparent, 5-step process for delivering custom software on time and on budget.
+          </p>
+          <Link to="/how-we-work">
+            <Button size="lg" className="group">
+              <span className="flex items-center gap-2">
+                See How We Work
+              </span>
+            </Button>
+          </Link>
+        </div>
+      </Section>
       
       <ContactCTA />
     </>
