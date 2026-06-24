@@ -60,9 +60,9 @@ const ContactPage = () => {
   ];
 
   const budgetOptions = [
-    "Under £10k",
-    "£10k-£25k",
-    "£25k-£50k",
+    "£3k - £10k",
+    "£10k - £25k",
+    "£25k - £50k",
     "£50k+"
   ];
 
@@ -237,7 +237,7 @@ ${data.projectDescription}
                           onHoverStart={() => setHoveredField('budget')}
                           onHoverEnd={() => setHoveredField(null)}
                         >
-                          <label htmlFor="budget" className="block text-sm font-medium text-text-secondary mb-2">Estimated Budget</label>
+                          <label htmlFor="budget" className="block text-sm font-medium text-text-secondary mb-2">Estimated Budget <span className="text-xs text-text-secondary/70 ml-2">(Minimum engagement: £3k)</span></label>
                           <select 
                             id="budget" 
                             {...register('budget')} 

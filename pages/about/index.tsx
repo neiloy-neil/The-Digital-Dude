@@ -46,7 +46,7 @@ const AboutPage = () => {
     vision: {
       icon: Lightbulb,
       title: 'Our Vision',
-      content: 'To become the leading technology partner for ambitious businesses worldwide, known for transforming complex challenges into elegant, scalable solutions that drive exponential growth. We envision a future where every business, regardless of size, has access to enterprise-grade technology that was previously only available to tech giants. By 2030, we aim to have helped over 500 companies transform their operations through intelligent software solutions.'
+      content: "To be the most reliable engineering partner for businesses that need serious software. We don't aim for vanity metrics or massive agency bloat. We envision a future where we continue to build a small, highly effective portfolio of mission-critical platforms—focusing deeply on quality, transparency, and shipping real products that work."
     },
     values: {
       icon: Award,

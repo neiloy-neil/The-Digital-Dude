@@ -65,7 +65,7 @@ interface AboutData {
 }
 
 export const aboutData: AboutData = {
-  mission: "Our mission is to empower ambitious businesses with technology that is not just functional, but truly transformational. We believe in a problem-first approach, meticulously architecting intelligent software ecosystems that solve core operational challenges and unlock new avenues for growth. We don't just build software; we build strategic assets that become the backbone of our clients' success, driving efficiency, innovation, and a sustainable competitive advantage in a fast-evolving digital landscape.\n\nFounded in 2020, we've grown from a small team of passionate developers to a full-service digital innovation agency with expertise spanning custom software development, artificial intelligence, cloud infrastructure, and user experience design. Our approach combines technical excellence with deep business understanding to deliver solutions that not only meet today's needs but anticipate tomorrow's challenges.",
+  mission: "Our mission is to build robust, custom software that solves real business problems. We focus on delivering working CRMs, SaaS platforms, and on-demand marketplaces without the bloat. Founded in 2020, our approach is problem-first—we scope strictly, develop transparently in weekly sprints, and hand over systems that your business fully owns. No over-engineering, no black boxes, just software that works.",
   philosophy: [
     {
       title: "Problem-First Architecture",

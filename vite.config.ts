@@ -19,7 +19,6 @@ export default defineConfig({
           'button-component': ['./components/ui/Button'],
           'image-fallback': ['./components/ui/ImageWithFallback'],
           'roi-calculator': ['./components/ui/ROICalculator'],
-          'chat-widget': ['./components/ui/ChatWidget'],
           'code-block': ['./components/ui/CodeBlock'],
           'section-component': ['./components/ui/Section'],
           'icon-component': ['./components/ui/Icon'],
@@ -42,9 +41,6 @@ export default defineConfig({
               return 'components/[name]-[hash].js';
             }
             if (facadeModuleId.includes('components/ROICalculator')) {
-              return 'components/[name]-[hash].js';
-            }
-            if (facadeModuleId.includes('components/ChatWidget')) {
               return 'components/[name]-[hash].js';
             }
             if (facadeModuleId.includes('components/CodeBlock')) {

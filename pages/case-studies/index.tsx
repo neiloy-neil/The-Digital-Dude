@@ -5,7 +5,6 @@ import Section from '../../components/ui/Section';
 import Card from '../../components/ui/Card';
 import Button from '../../components/ui/Button';
 import { ArrowRight, MessageCircle, Eye, Lightbulb, CheckCircle, TrendingUp, Zap, BarChart2 } from 'lucide-react';
-import Magnetic from '../../components/ui/Magnetic';
 import Seo from '../../components/Seo';
 import ImageWithFallback from '../../components/ui/ImageWithFallback';
 import { caseStudies } from '../../data/staticData';
@@ -208,7 +207,6 @@ const CaseStudiesPage = () => {
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
-                  <Magnetic>
                     <Link to="/contact">
                       <Button size="lg" className="group relative overflow-hidden">
                         <span className="relative z-10 flex items-center gap-2">
@@ -229,7 +227,6 @@ const CaseStudiesPage = () => {
                         />
                       </Button>
                     </Link>
-                  </Magnetic>
                   
                   <Link to="/services">
                     <Button variant="outline" size="lg" className="group">
