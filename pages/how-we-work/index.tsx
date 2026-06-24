@@ -7,28 +7,23 @@ const HowWeWorkPage = () => {
   const steps = [
     {
       number: '01',
-      title: 'Discovery call',
-      description: "We figure out if we're a fit. No sales pressure. Just an honest conversation about your operational bottlenecks and whether custom software is the right solution."
+      title: 'The One-Page Brief',
+      description: "We don't do 50-page spec docs. We agree on the core problem and the MVP scope on one page."
     },
     {
       number: '02',
-      title: 'One-page brief',
-      description: "We define scope, timeline, and fixed cost. We don't believe in 50-page specifications. We give you a clear, single-page brief that outlines exactly what you'll get, when you'll get it, and what it costs."
+      title: 'Weekly Sprints & Demos',
+      description: "You see working software every Friday."
     },
     {
       number: '03',
-      title: 'Design & Architecture',
-      description: "Wireframes and database schema. We map out the data structures and user interfaces before writing a single line of code, ensuring everyone is aligned on the final product."
+      title: 'Handover & Training',
+      description: "We train your team and hand over the keys."
     },
     {
       number: '04',
-      title: 'Development sprints',
-      description: "Weekly demos of working software. You won't be left in the dark for months. We build iteratively and show you progress every single week so you can provide feedback early."
-    },
-    {
-      number: '05',
-      title: 'Handover',
-      description: "You get the code, docs, and keys. No vendor lock-in. Once the final payment is made, the IP is yours. We hand over the source code, hosting credentials, and documentation."
+      title: 'Ongoing Support',
+      description: "Optional retainer for updates and scaling."
     }
   ];
 

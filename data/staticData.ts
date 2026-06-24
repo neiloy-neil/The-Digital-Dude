@@ -1,4 +1,4 @@
-import { BlogPost, ProcessStep, Differentiator, TeamMember, Milestone } from '../types';
+import { BlogPost, Differentiator, TeamMember, Milestone } from '../types';
 import { caseStudies as caseStudyList } from './caseStudiesData';
 
 // Export the imported data
@@ -23,58 +23,6 @@ export const blogPosts: BlogPost[] = [
     "coverImage": "https://images.unsplash.com/photo-1558655146-d09347e92766?w=800&h=600&fit=crop",
     "tags": ["Design", "ROI", "UX"],
     "category": "Design"
-  }
-];
-
-// Process steps data
-export const processSteps: ProcessStep[] = [
-  {
-    step: 1,
-    title: "Discovery & Strategy",
-    description: "We start by deeply understanding your business goals and technical requirements.",
-    icon: "Search",
-    details: "This foundational phase is all about alignment. We conduct in-depth stakeholder interviews, analyze your existing systems, and map out user journeys. Our goal is to define clear, measurable objectives and establish a strategic roadmap that ensures the final product solves the right problems and delivers tangible ROI.",
-    deliverables: ["Project Brief & Scope Document", "Technical Requirements Specification", "User Personas & Journey Maps", "Project Roadmap & Timeline"],
-    testimonial: {
-      quote: "The discovery phase was invaluable. They didn't just listen; they understood our business on a deep level, which set the entire project up for success.",
-      author: "John Smith, PropSecure"
-    }
-  },
-  {
-    step: 2,
-    title: "UI/UX Design",
-    description: "We design intuitive and engaging interfaces, focusing on user experience.",
-    icon: "Palette",
-    details: "Here, we translate strategy into a tangible user experience. We create wireframes to structure the application's flow and information architecture, followed by high-fidelity prototypes that define the visual identity and user interface. Every design decision is data-driven and user-centric, aimed at creating a product that is not only beautiful but also intuitive and easy to use.",
-    deliverables: ["Low & High-Fidelity Wireframes", "Interactive Prototypes (Figma)", "Complete UI Kit & Design System", "User Flow Diagrams"],
-     testimonial: {
-      quote: "The design prototypes they delivered were stunning and incredibly well-thought-out. We could see exactly how the app would work before a single line of code was written.",
-      author: "Jane Doe, AirTravel Co."
-    }
-  },
-  {
-    step: 3,
-    title: "Agile Development",
-    description: "Our team builds your product in iterative sprints, allowing for flexibility and feedback.",
-    icon: "Code",
-    details: "Our development process is built on agile principles. We work in two-week sprints, delivering functional pieces of the application for your review at the end of each cycle. This iterative approach allows for continuous feedback, flexibility to adapt to changing requirements, and complete transparency through regular check-ins and a shared project management board.",
-    deliverables: ["Functioning Application Builds (Bi-weekly)", "Source Code Repository Access", "Automated Test Suites", "Continuous Integration/Deployment (CI/CD) Pipeline"],
-    testimonial: {
-      quote: "Their agile process kept us involved and in control. Seeing progress every two weeks gave us immense confidence and allowed us to make adjustments on the fly.",
-      author: "John Smith, PropSecure"
-    }
-  },
-  {
-    step: 4,
-    title: "Launch & Scale",
-    description: "We handle deployment to a scalable cloud infrastructure and provide ongoing support.",
-    icon: "Rocket",
-    details: "Going live is just the beginning. We manage the entire deployment process to a secure and scalable cloud infrastructure (AWS, GCP, Azure). Post-launch, we provide comprehensive support and maintenance retainers, including performance monitoring, security updates, and a roadmap for future feature enhancements to ensure your product evolves with your business.",
-    deliverables: ["Full Production Deployment", "Scalable Cloud Infrastructure Setup", "Technical Documentation", "Ongoing Support & Maintenance Plan"],
-    testimonial: {
-      quote: "The launch was seamless. Their team handled everything, and the post-launch support has been exceptional, giving us peace of mind as we scale our user base.",
-      author: "Jane Doe, AirTravel Co."
-    }
   }
 ];
 
