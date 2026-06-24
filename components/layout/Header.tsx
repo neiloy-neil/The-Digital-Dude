@@ -45,48 +45,9 @@ const Header = () => {
   };
   
   const navLinks = [
-    { 
-      label: "Services", 
-      path: "/services",
-      dropdown: [
-        { label: "Custom Software", path: "/services/custom-software" },
-        { label: "AI & Data Solutions", path: "/services/ai-ml" },
-        { label: "Web & Mobile Ecosystems", path: "/services/web-mobile" },
-        { label: "B2B SaaS Platforms", path: "/services/saas" },
-        { label: "Marketplaces", path: "/services/marketplaces" },
-        { label: "E-Commerce", path: "/services/ecommerce" },
-        { label: "Cloud & DevOps", path: "/services/cloud-devops" },
-        { label: "Maintenance & Support", path: "/services/maintenance" },
-        { label: "Strategic Consulting", path: "/services/consulting" }
-      ]
-    },
-    { 
-      label: "Solutions", 
-      path: "#",
-      dropdown: [
-        { label: "AI Solutions", path: "/ai-solutions" },
-        { label: "Marketplaces", path: "/services/marketplaces" },
-        { label: "SaaS Platforms", path: "/services/saas" },
-        { label: "E-Commerce", path: "/services/ecommerce" }
-      ]
-    },
-    { label: "Portfolio", path: "/portfolio" },
-    { label: "Case Studies", path: "/case-studies" },
-    { label: "Resources", 
-      path: "/resources",
-      dropdown: [
-        { label: "Blog", path: "/blog" },
-        { label: "Guides & Whitepapers", path: "/resources" },
-        { label: "ROI Calculator", path: "/resources/roi-calculator" },
-        { label: "Tech Stack Explorer", path: "/resources/tech-stack-explorer" },
-        { label: "Service Comparison", path: "/resources/service-comparison" },
-        { label: "Interactive Portfolio", path: "/resources/interactive-portfolio" },
-        { label: "Downloadable Templates", path: "/resources/downloadable-templates" },
-        { label: "Project Idea Submission", path: "/resources/project-idea-submission" },
-        { label: "Pricing Calculator", path: "/resources/pricing-calculator" },
-        { label: "FAQ", path: "/faq" }
-      ]
-    },
+    { label: "Services", path: "/services" },
+    { label: "Work", path: "/work" },
+    { label: "How We Work", path: "/how-we-work" },
     { label: "About Us", path: "/about" },
     { label: "Contact", path: "/contact" }
   ];

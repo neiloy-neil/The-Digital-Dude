@@ -8,33 +8,14 @@ import { services } from '../../data/staticData';
 const MotionDiv: any = motion.div;
 
 const footerLinks = {
-  services: services.slice(0, 6).map(service => ({
-    label: service.title,
-    href: `/services/${service.id}`
-  })),
+  services: [
+    { label: 'All Services', href: '/services' }
+  ],
   company: [
+    { label: 'Work', href: '/work' },
+    { label: 'How We Work', href: '/how-we-work' },
     { label: 'About Us', href: '/about' },
-    { label: 'Portfolio', href: '/portfolio' },
-    { label: 'Case Studies', href: '/case-studies' },
-    { label: 'Careers', href: '/careers' },
-    { label: 'Contact', href: '/contact' },
-    { label: 'Blog', href: '/blog' },
-  ],
-  resources: [
-    { label: 'All Resources', href: '/resources' },
-    { label: 'Downloadable Templates', href: '/resources/downloadable-templates' },
-    { label: 'Project Idea Submission', href: '/resources/project-idea-submission' },
-    { label: 'Investment & Pricing', href: '/investment' },
-    { label: 'FAQ', href: '/faq' },
-    { label: 'Tech Guides', href: '/resources' }
-  ],
-  tools: [
-    { label: 'ROI Calculator', href: '/resources/roi-calculator' },
-    { label: 'Tech Stack Explorer', href: '/resources/tech-stack-explorer' },
-    { label: 'Service Comparison', href: '/resources/service-comparison' },
-    { label: 'Interactive Portfolio', href: '/resources/interactive-portfolio' },
-    { label: 'Pricing Calculator', href: '/resources/pricing-calculator' },
-    { label: 'Blog', href: '/blog' }
+    { label: 'Contact', href: '/contact' }
   ]
 };
 
@@ -63,7 +44,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         {/* Main Footer Content */}
         <div className="py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Company Info */}
             <div className="lg:col-span-2">
               <MotionDiv
@@ -205,73 +186,7 @@ const Footer = () => {
               </MotionDiv>
             </div>
 
-            {/* Resources Links */}
-            <div>
-              <MotionDiv
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-              >
-                <motion.h3 
-                  className="font-bold text-text-primary mb-6"
-                  // ENHANCEMENT: Add subtle entrance animation
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5 }}
-                >
-                  Resources
-                </motion.h3>
-                <ul className="space-y-3">
-                  {footerLinks.resources.map((link) => (
-                    <motion.div whileHover={{ x: 5 }}>
-                      <Link 
-                        to={link.href} 
-                        className="text-text-secondary hover:text-primary transition-colors text-sm group flex items-center gap-2"
-                      >
-                        <span>{link.label}</span>
-                        <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
-                      </Link>
-                    </motion.div>
-                  ))}
-                </ul>
-              </MotionDiv>
-            </div>
 
-            {/* Tools Links */}
-            <div>
-              <MotionDiv
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-              >
-                <motion.h3 
-                  className="font-bold text-text-primary mb-6"
-                  // ENHANCEMENT: Add subtle entrance animation
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5 }}
-                >
-                  Tools
-                </motion.h3>
-                <ul className="space-y-3">
-                  {footerLinks.tools.map((link) => (
-                    <motion.div whileHover={{ x: 5 }}>
-                      <Link 
-                        to={link.href} 
-                        className="text-text-secondary hover:text-primary transition-colors text-sm group flex items-center gap-2"
-                      >
-                        <span>{link.label}</span>
-                        <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
-                      </Link>
-                    </motion.div>
-                  ))}
-                </ul>
-              </MotionDiv>
-            </div>
           </div>
         </div>
 
