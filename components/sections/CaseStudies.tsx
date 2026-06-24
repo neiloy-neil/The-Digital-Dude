@@ -20,7 +20,7 @@ const CaseStudies = () => {
   
   // Highlighting the specific projects mentioned in the plan
   const featuredCaseStudies = caseStudies.filter(cs => 
-    ['property-compliance-management', 'garage-crm-app', 'truck-breakdown-assistance'].includes(cs.id)
+    ['property-compliance-crm', 'logistics-coordination-platform', 'ai-tutoring-platform'].includes(cs.id)
   );
 
   const containerVariants = {
@@ -107,9 +107,9 @@ const CaseStudies = () => {
               >
                 <Users className="w-12 h-12 text-accent mx-auto mb-4" />
               </MotionDiv>
-              <h3 className="text-3xl font-bold text-text-primary mb-2 group-hover:text-accent transition-colors heading-gradient">50+</h3>
-              <p className="text-text-secondary mb-4 font-medium">Successful Projects</p>
-              <p className="text-sm text-text-secondary group-hover:text-text-primary/80 transition-colors">From startups to enterprises across multiple industries</p>
+              <h3 className="text-3xl font-bold text-text-primary mb-2 group-hover:text-accent transition-colors heading-gradient">7</h3>
+              <p className="text-text-secondary mb-4 font-medium">Live Products Shipped</p>
+              <p className="text-sm text-text-secondary group-hover:text-text-primary/80 transition-colors">Real systems running live in production</p>
             </Card>
           </MotionDiv>
           
@@ -129,13 +129,13 @@ const CaseStudies = () => {
         </MotionDiv>
       )}
       <div className="text-center mt-12">
-        <Link to="/case-studies">
+        <Link to="/work">
           <Button
             variant="outline"
             size="lg"
             rightIcon={<ArrowRight size={20} />}
           >
-            View All Case Studies
+            View All Work
           </Button>
         </Link>
       </div>

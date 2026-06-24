@@ -3,8 +3,8 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, CheckCircle, BarChart2, Zap, Quote, Star } from 'lucide-react';
 import Button from '../../components/ui/Button';
 import Seo from '../../components/Seo';
-import { caseStudies, testimonials } from '../../data/staticData';
-import { CaseStudy, Testimonial } from '../../types';
+import { caseStudies } from '../../data/staticData';
+import { CaseStudy } from '../../types';
 import Card from '../../components/ui/Card';
 import ImageWithFallback from '../../components/ui/ImageWithFallback';
 
@@ -18,13 +18,12 @@ const CaseStudyDetailPage = () => {
   const navigate = useNavigate();
 
   const caseStudy: CaseStudy | undefined = caseStudies.find(s => s.id === caseStudyId);
-  const testimonial: Testimonial | undefined = testimonials.find(t => t.caseStudyId === caseStudyId);
 
   if (!caseStudy) {
     return (
       <div className="text-center py-40">
         <p className="text-red-400 mb-4">Could not load case study.</p>
-        <Button variant="ghost" onClick={() => navigate('/case-studies')}>Back to Case Studies</Button>
+        <Button variant="ghost" onClick={() => navigate('/work')}>Back to Work</Button>
       </div>
     );
   }
@@ -59,8 +58,8 @@ const CaseStudyDetailPage = () => {
         className="pt-24 pb-20"
       >
         <div className="container mx-auto px-6">
-          <Button variant="ghost" onClick={() => navigate('/case-studies')} leftIcon={<ArrowLeft size={20} />} className="mb-8 text-text-secondary !p-0">
-            Back to Case Studies
+          <Button variant="ghost" onClick={() => navigate('/work')} leftIcon={<ArrowLeft size={20} />} className="mb-8 text-text-secondary !p-0">
+            Back to Work
           </Button>
 
           {/* Hero */}
@@ -123,18 +122,7 @@ const CaseStudyDetailPage = () => {
                 </div>
               </section>
 
-              {/* Testimonial */}
-              {testimonial && (
-                <section>
-                  <Card className="p-8 bg-primary/5">
-                      <Quote className="w-8 h-8 text-primary/50 mb-4 transform -scale-x-100" />
-                      <blockquote className="text-xl text-text-primary italic mb-4">"{testimonial.quote}"</blockquote>
-                      <footer className="text-text-secondary font-semibold">
-                        {testimonial.name}, <span className="font-normal">{testimonial.role}, {testimonial.company}</span>
-                      </footer>
-                  </Card>
-                </section>
-              )}
+
             </div>
 
             {/* Sidebar */}

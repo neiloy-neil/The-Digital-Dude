@@ -4,7 +4,6 @@ import { useState, useMemo } from 'react';
 import Section from '../../components/ui/Section';
 import Card from '../../components/ui/Card';
 import Button from '../../components/ui/Button';
-import CompaniesWorkedWith from '../../components/sections/CompaniesWorkedWith';
 import { ArrowRight, MessageCircle, Eye, Lightbulb, CheckCircle, TrendingUp, Zap, BarChart2 } from 'lucide-react';
 import Magnetic from '../../components/ui/Magnetic';
 import Seo from '../../components/Seo';
@@ -55,9 +54,9 @@ const CaseStudiesPage = () => {
         structuredData={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          "name": "Case Studies - The Digital Dude",
+          "name": "Our Work - The Digital Dude",
           "description": "See how we've helped businesses increase efficiency by 60%, reduce costs by 30% & scale operations with custom software solutions.",
-          "url": "https://www.digitaldude.online/case-studies",
+          "url": "https://www.digitaldude.online/work",
           "mainEntity": {
             "@type": "ItemList",
             "itemListElement": caseStudies.map((study, index) => ({
@@ -67,14 +66,14 @@ const CaseStudiesPage = () => {
                 "@type": "CreativeWork",
                 "name": study.title,
                 "description": study.result,
-                "url": `https://www.digitaldude.online/case-studies/${study.id}`
+                "url": `https://www.digitaldude.online/work/${study.id}`
               }
             }))
           }
         }}
       />
       <div className="pt-24">
-        <Section title="Software Development Case Studies" subtitle="Explore our success stories and see how we've delivered tangible results.">
+        <Section title="Our Work" subtitle="Explore our success stories and see how we've delivered tangible results.">
           {/* Enhanced Filter Controls */}
           <div className="flex flex-wrap justify-center gap-3 mb-12">
             {tags.map(tag => (
@@ -107,7 +106,7 @@ const CaseStudiesPage = () => {
                     exit="exit"
                     className="flex flex-col h-full"
                  >
-                    <Link to={`/case-studies/${study.id}`} className="h-full flex flex-col">
+                    <Link to={`/work/${study.id}`} className="h-full flex flex-col">
                       <Card className="group hover-glow-rgb card-gradient-hover h-full flex flex-col">
                         <div className="relative rounded-lg overflow-hidden">
                           <ImageWithFallback src={study.image} alt={study.title} loading="lazy" className="w-full h-64 md:h-80 object-cover" />
@@ -184,8 +183,7 @@ const CaseStudiesPage = () => {
           </div>
         </Section>
         
-        <CompaniesWorkedWith />
-        
+
         <Section title="" subtitle="">
           {/* CTA Section */}
           <MotionDiv

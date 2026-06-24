@@ -179,7 +179,7 @@ const HomePage = () => {
                   Explore Our Services
                 </Button>
               </Link>
-              <Link to="/case-studies">
+              <Link to="/work">
                 <Button variant="outline" size="lg">
                   See Success Stories
                 </Button>
