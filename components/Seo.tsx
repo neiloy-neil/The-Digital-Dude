@@ -22,7 +22,7 @@ const SEO = ({
   description = 'Transform your business with custom software, AI solutions & SaaS platforms. Expert developers delivering measurable ROI & scalable digital products.',
   keywords = 'software development, custom software, SaaS development, AI solutions, web development, mobile apps, digital transformation, React, Node.js, Python, machine learning',
   image = 'https://images.unsplash.com/photo-1486312338219-ce68e2c6b33d?w=1200&h=630&fit=crop',
-  url = 'https://www.digitaldude.co.uk',
+  url = 'https://www.digitaldude.online',
   type = 'website',
   structuredData,
   author,
@@ -38,8 +38,8 @@ const SEO = ({
     "@type": "Organization",
     "name": "The Digital Dude",
     "description": "Transform your business with custom software, AI solutions & SaaS platforms. Expert developers delivering measurable ROI & scalable digital products.",
-    "url": "https://www.digitaldude.co.uk",
-    "logo": "https://www.digitaldude.co.uk/logo.png",
+    "url": "https://www.digitaldude.online",
+    "logo": "https://www.digitaldude.online/logo.svg",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+44-123-456-789",
@@ -125,7 +125,7 @@ const SEO = ({
               "name": "The Digital Dude",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.digitaldude.co.uk/logo.png"
+                "url": "https://www.digitaldude.online/logo.svg"
               }
             }
           })}

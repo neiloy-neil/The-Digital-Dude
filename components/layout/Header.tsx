@@ -53,8 +53,7 @@ const Header = () => {
   ];
 
   const quickActions = [
-    { icon: Phone, text: "Call Us", href: "tel:+1234567890" },
-    { icon: Mail, text: "Email", href: "mailto:hello@digitaldude.com" },
+    { icon: Mail, text: "Email", href: "mailto:info@digitaldude.co.uk" },
   ];
 
   const activeLinkStyle = {

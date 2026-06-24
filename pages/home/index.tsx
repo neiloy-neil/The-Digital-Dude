@@ -191,7 +191,7 @@ const HomePage = () => {
       
       <CaseStudies />
       
-      <Section className="py-20 bg-surface/20">
+      <Section title="" subtitle="" className="py-20 bg-surface/20">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-6 text-text-primary">Ready to build something real?</h2>
           <p className="text-lg text-text-secondary mb-8">

@@ -18,7 +18,7 @@ const TermsOfServicePage = () => {
           "@type": "WebPage",
           "name": "Terms & Conditions",
           "description": "Read our comprehensive terms for using our website & services. Understand your rights & responsibilities when working with our agency.",
-          "url": "https://www.digitaldude.co.uk/terms"
+          "url": "https://www.digitaldude.online/terms"
         }}
       />
       

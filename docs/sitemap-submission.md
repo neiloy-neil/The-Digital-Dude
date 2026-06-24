@@ -22,7 +22,7 @@ Google will periodically check your sitemap for updates. You can manually reques
 3. Add your site if it's not already added
 4. Navigate to "Configure My Site" > "Sitemaps"
 5. Click "Add a Sitemap"
-6. Enter: `https://www.digitaldude.co.uk/sitemap.xml`
+6. Enter: `https://www.digitaldude.online/sitemap.xml`
 7. Click "Submit"
 
 ## Additional Search Engines
@@ -31,12 +31,12 @@ Google will periodically check your sitemap for updates. You can manually reques
 1. Go to [Yandex Webmaster](https://webmaster.yandex.com/)
 2. Add your site if not already added
 3. Navigate to "Indexing" > "Sitemap files"
-4. Add your sitemap URL: `https://www.digitaldude.co.uk/sitemap.xml`
+4. Add your sitemap URL: `https://www.digitaldude.online/sitemap.xml`
 
 ## Verification
 
 After submission, you can verify that search engines can access your sitemap by visiting:
-- `https://www.digitaldude.co.uk/sitemap.xml`
+- `https://www.digitaldude.online/sitemap.xml`
 
 Make sure the sitemap is accessible and displays correctly in a web browser.
 

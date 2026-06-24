@@ -38,7 +38,7 @@ const SEO = ({
     "name": "The Digital Dude",
     "description": "Leading software development agency specializing in custom SaaS platforms, AI solutions, and digital transformation.",
     "url": "https://www.digitaldude.online",
-    "logo": "https://www.digitaldude.online/logo.png",
+    "logo": "https://www.digitaldude.online/logo.svg",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+44-123-456-789",
@@ -124,7 +124,7 @@ const SEO = ({
               "name": "The Digital Dude",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.digitaldude.online/logo.png"
+                "url": "https://www.digitaldude.online/logo.svg"
               }
             }
           })}

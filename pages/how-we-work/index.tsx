@@ -54,7 +54,7 @@ const HowWeWorkPage = () => {
           </motion.p>
         </div>
 
-        <Section>
+        <Section title="" subtitle="">
           <div className="max-w-3xl mx-auto space-y-12">
             {steps.map((step, index) => (
               <motion.div 

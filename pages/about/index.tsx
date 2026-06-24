@@ -6,7 +6,6 @@ import Button from '../../components/ui/Button';
 import Seo from '../../components/Seo';
 import Section from '../../components/ui/Section';
 import Card from '../../components/ui/Card';
-import CompaniesWorkedWith from '../../components/sections/CompaniesWorkedWith';
 import ImageWithFallback from '../../components/ui/ImageWithFallback';
 import { aboutData } from '../../data/staticData';
 
@@ -31,12 +30,7 @@ const MotionDiv: any = motion.div;
 
 // FIX: Removed explicit JSX.Element return type to fix type resolution issues with framer-motion.
 const teamBios: Record<string, string> = {
-    'John Carter': "With over 15 years in software architecture, John is the visionary behind our technical strategies. He excels at translating complex business problems into scalable, elegant software solutions. Before founding The Digital Dude, John led engineering teams at several successful startups and established tech companies. His expertise spans cloud architecture, distributed systems, and enterprise software development. John holds a Master's in Computer Science from Imperial College London and is a regular speaker at international tech conferences.",
-    'Sarah Dane': "Sarah leads our AI initiatives, holding a Ph.D. in Machine Learning from Cambridge University. She is passionate about making advanced AI accessible and practical for businesses, specializing in NLP and predictive analytics. With over 10 years of experience in the field, Sarah has published numerous papers on deep learning applications in business contexts. She's instrumental in developing our proprietary AI frameworks that have helped clients increase efficiency by up to 70%.",
-    'Mike Ross': "A master of user interfaces, Mike ensures every application we build is intuitive, responsive, and beautiful. He has a deep expertise in React and modern frontend ecosystems. With a background in both design and development, Mike bridges the gap between aesthetic appeal and technical functionality. He's been recognized with multiple awards for his innovative UI designs and has contributed to open-source projects used by thousands of developers worldwide.",
-    'Rachel Zane': "Rachel bridges the gap between user needs and technical implementation. Her data-driven approach to UX research and design ensures our products are not just functional, but delightful to use. With a Master's in Human-Computer Interaction from University College London, Rachel has led user experience initiatives for Fortune 500 companies. Her empathetic design philosophy has resulted in products that consistently achieve over 95% user satisfaction ratings.",
-    'Harvey Specter': "As Head of Business Development, Harvey brings over 12 years of experience in technology consulting and client relations. His strategic approach to partnership building has helped us expand our client base across multiple continents. Before joining The Digital Dude, Harvey worked at top-tier consulting firms where he specialized in digital transformation for enterprise clients. He holds an MBA from London Business School and is known for his ability to identify growth opportunities that others miss.",
-    'Donna Paulsen': "Donna oversees our operations, ensuring seamless project delivery and client satisfaction. With a background in project management and organizational psychology, she has developed our proprietary project execution framework that consistently delivers projects on time and within budget. Her attention to detail and process optimization skills have contributed to our 100% project success rate. Donna is a certified PMP and Agile practitioner with a passion for team development."
+    'Farhad Hossain': "Leading strategy, client relationships, and delivery across all projects. Our team — 3 to 5 people depending on project scope, including frontend and backend developers, a digital marketer, and specialist contractors brought in per project. Based in Dhaka, Bangladesh."
 }
 
 const AboutPage = () => {
@@ -76,7 +70,7 @@ const AboutPage = () => {
           "@type": "AboutPage",
           "name": "About The Digital Dude",
           "description": "Meet our team of expert developers & designers. We build transformative software solutions for ambitious businesses worldwide.",
-          "url": "https://www.digitaldude.co.uk/about",
+          "url": "https://www.digitaldude.online/about",
           "mainEntity": {
             "@type": "Organization",
             "name": "The Digital Dude",
@@ -85,35 +79,15 @@ const AboutPage = () => {
             "founders": [
               {
                 "@type": "Person",
-                "name": "John Carter",
-                "jobTitle": "CEO & Founder"
+                "name": "Farhad Hossain",
+                "jobTitle": "CEO & Co-Founder"
               }
             ],
             "employee": [
               {
                 "@type": "Person",
-                "name": "Sarah Dane",
-                "jobTitle": "Head of AI"
-              },
-              {
-                "@type": "Person",
-                "name": "Mike Ross",
-                "jobTitle": "Head of Design"
-              },
-              {
-                "@type": "Person",
-                "name": "Rachel Zane",
-                "jobTitle": "Head of UX"
-              },
-              {
-                "@type": "Person",
-                "name": "Harvey Specter",
-                "jobTitle": "Head of Business Development"
-              },
-              {
-                "@type": "Person",
-                "name": "Donna Paulsen",
-                "jobTitle": "Operations Director"
+                "name": "Farhad Hossain",
+                "jobTitle": "CEO & Co-Founder"
               }
             ],
             "address": {
@@ -328,9 +302,7 @@ const AboutPage = () => {
             </MotionDiv>
         </Section>
         
-        {/* Companies We've Worked With */}
-        <CompaniesWorkedWith />
-        
+
         {/* CTA Banner */}
         <div className="container mx-auto px-6 mt-20">
             <motion.div 

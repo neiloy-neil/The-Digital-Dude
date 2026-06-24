@@ -57,7 +57,7 @@ const CaseStudiesPage = () => {
           "@type": "CollectionPage",
           "name": "Case Studies - The Digital Dude",
           "description": "See how we've helped businesses increase efficiency by 60%, reduce costs by 30% & scale operations with custom software solutions.",
-          "url": "https://www.digitaldude.co.uk/case-studies",
+          "url": "https://www.digitaldude.online/case-studies",
           "mainEntity": {
             "@type": "ItemList",
             "itemListElement": caseStudies.map((study, index) => ({
@@ -67,7 +67,7 @@ const CaseStudiesPage = () => {
                 "@type": "CreativeWork",
                 "name": study.title,
                 "description": study.result,
-                "url": `https://www.digitaldude.co.uk/case-studies/${study.id}`
+                "url": `https://www.digitaldude.online/case-studies/${study.id}`
               }
             }))
           }

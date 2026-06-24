@@ -134,7 +134,7 @@ ${data.projectDescription}
           "@type": "ContactPage",
           "name": "Contact The Digital Dude",
           "description": "Get a free consultation for your custom software project. Discuss your ideas with our expert team & receive a detailed project roadmap.",
-          "url": "https://www.digitaldude.co.uk/contact",
+          "url": "https://www.digitaldude.online/contact",
           "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+44-123-456-789",

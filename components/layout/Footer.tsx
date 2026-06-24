@@ -27,8 +27,7 @@ const socialLinks = [
 
 const contactInfo = [
   { icon: Mail, text: 'info@digitaldude.co.uk', href: 'mailto:info@digitaldude.co.uk' },
-  { icon: Phone, text: '+44 (0) 123 456 789', href: 'tel:+440123456789' },
-  { icon: MapPin, text: 'London, United Kingdom', href: '#' },
+  { icon: MapPin, text: 'Dhaka, Bangladesh · UK Registered', href: '#' },
 ];
 
 const Footer = () => {

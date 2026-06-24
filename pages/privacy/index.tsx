@@ -18,7 +18,7 @@ const PrivacyPolicyPage = () => {
           "@type": "WebPage",
           "name": "Privacy Policy",
           "description": "Learn how we collect, use & protect your personal information. Your privacy is important to us. Read our transparent data practices.",
-          "url": "https://www.digitaldude.co.uk/privacy"
+          "url": "https://www.digitaldude.online/privacy"
         }}
       />
       
